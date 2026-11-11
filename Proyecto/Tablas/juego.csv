@@ -1,0 +1,6 @@
+id_app,genero,modo_multijugador,requiere_internet
+APP01,Puzles,0,0
+APP02,Carreras,1,1
+APP03,Estrategia,1,1
+APP04,Misterio,0,0
+APP05,Corredor infinito,0,0

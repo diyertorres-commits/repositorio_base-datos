@@ -1,0 +1,10 @@
+id_resena,id_usuario,id_app,calificacion,comentario,fecha_resena
+RES01,USR01,APP01,5,Muy buenos acertijos,2025-05-10
+RES02,USR01,APP06,4,Útil para organizar tareas,2025-05-12
+RES03,USR02,APP03,4,"Buena estrategia, algo lenta",2025-10-05
+RES04,USR02,APP02,3,"Divertido, pero con fallos",2025-10-20
+RES05,USR03,APP04,5,Historia muy atrapante,2026-02-20
+RES06,USR04,APP01,4,Falta más contenido,2026-04-01
+RES07,USR05,APP04,2,Se cierra en mi equipo,2026-05-20
+RES08,USR06,APP05,5,Adictivo y gratuito,2026-05-02
+RES09,USR06,APP02,4,Muy buenos gráficos,2026-05-05

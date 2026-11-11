@@ -1,0 +1,7 @@
+id_compra,fecha,total,metodo_pago,id_usuario
+CMP01,2025-04-02,6.98,Tarjeta,USR01
+CMP02,2025-09-20,2.99,PayPal,USR02
+CMP03,2026-02-02,4.48,Tarjeta,USR03
+CMP04,2026-03-10,7.48,Transferencia,USR04
+CMP05,2026-04-05,3.98,Tarjeta,USR01
+CMP06,2026-05-12,5.98,PayPal,USR05

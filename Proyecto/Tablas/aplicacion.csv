@@ -1,0 +1,11 @@
+id_app,nombre,descripcion,precio,tamano_mb,clasificacion_edad,fecha_publicacion,id_desarrollador,id_categoria
+APP01,Aventura Andina,Acertijos en los Andes,4.99,320.50,+7,2025-03-10,DEV01,CAT02
+APP02,Carrera Veloz,Carreras arcade,0.00,210.00,Todos,2025-06-18,DEV03,CAT01
+APP03,Guerreros del Sol,Combate por turnos,2.99,480.75,+12,2025-09-02,DEV04,CAT01
+APP04,Misterio en Loja,Novela de detectives,3.49,150.20,+12,2026-01-15,DEV02,CAT02
+APP05,Cóndor Runner,Corredor de montaña,0.00,95.30,Todos,2026-04-22,DEV01,CAT01
+APP06,Tareas Pro,Gestor de tareas,1.99,25.40,Todos,2025-02-05,DEV02,CAT04
+APP07,Estudia Fácil,Tarjetas de estudio,0.00,38.10,Todos,2025-08-20,DEV05,CAT03
+APP08,Calculadora Científica,Funciones avanzadas,0.99,12.60,Todos,2025-11-11,DEV03,CAT05
+APP09,Notas Seguras,Notas con contraseña,2.49,18.90,Todos,2026-02-28,DEV04,CAT04
+APP10,Idiomas Rápido,Inglés y quichua,0.00,64.00,Todos,2026-05-30,DEV05,CAT03

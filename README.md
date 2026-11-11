@@ -1,77 +1,102 @@
-# Portafolio de Base de Datos
+# Portafolio Académico – Base de Datos
 
-Repositorio con los ejercicios de modelado de bases de datos desarrollados en la asignatura de **Base de Datos**: diagramas **Entidad-Relación** y sus **scripts SQL** correspondientes.
+## 1. Descripción
 
-**Autor:** Diyer Arley Torres Troya
-**Carrera:** Computación
-**Universidad:** Universidad Nacional de Loja (UNL), Loja, Ecuador
+El presente repositorio contiene una recopilación organizada de las actividades autónomas, ejercicios prácticos y proyectos desarrollados en la asignatura de **Base de Datos**, correspondiente a la carrera de Ingeniería en Computación de la Universidad Nacional de Loja.
 
----
+Su contenido aborda los fundamentos del diseño y modelado de bases de datos, la representación mediante diagramas Entidad-Relación, la transformación al modelo relacional y la implementación de estructuras de datos mediante el lenguaje SQL.
 
-## Contenido
+## 2. Objetivos
 
-| N.º | Ejercicio | Diagrama ER | Script SQL | Conceptos aplicados |
-|----|-----------|-------------|------------|---------------------|
-| 1 | Sistema de biblioteca | [ej1_biblioteca.drawio](drawio/ej1_biblioteca.drawio) | [sql_ej1_biblioteca.sql](SQL/sql_ej1_biblioteca.sql) | Relaciones N:M con atributos (préstamo) |
-| 2 | Pedidos de restaurante | [ej2_restaurante.drawio](drawio/ej2_restaurante.drawio) | [sql_ej2_restaurante.sql](SQL/sql_ej2_restaurante.sql) | N:M con precio unitario y cantidad |
-| 3 | Clínica médica | [ej3_clinica_medica.drawio](drawio/ej3_clinica_medica.drawio) | [sql_ej3_clinica_medica.sql](SQL/sql_ej3_clinica_medica.sql) | Cardinalidad 0,1 (receta), N:M con dosis y duración |
-| 4 | Sistema de aerolínea | [ej4_aerolinea.drawio](drawio/ej4_aerolinea.drawio) | [sql_ej4_aerolinea.sql](SQL/sql_ej4_aerolinea.sql) | Relaciones 1:N encadenadas |
-| 5 | Empresa discográfica | [ej5_discografica.drawio](drawio/ej5_discografica.drawio) | [sql_ej5_discografica.sql](SQL/sql_ej5_discografica.sql) | 1:N y N:M |
-| 6 | Tienda informática | [ej6_tienda_informatica.drawio](drawio/ej6_tienda_informatica.drawio) | [sql_ej6_tienda_informatica.sql](SQL/sql_ej6_tienda_informatica.sql) | Dos relaciones N:M (compra y suministro) |
-| 7 | Discos musicales | [ej7_discos_musicales.drawio](drawio/ej7_discos_musicales.drawio) | [sql_ej7_discos_musicales.sql](SQL/sql_ej7_discos_musicales.sql) | N:M con posición de la canción |
-| 8 | Camiones | [ej8_camiones.drawio](drawio/ej8_camiones.drawio) | [sql_ej8_camiones.sql](SQL/sql_ej8_camiones.sql) | N:M con fecha (conduce) |
-| 9 | Veterinaria | [ej9_veterinaria.drawio](drawio/ej9_veterinaria.drawio) | [sql_ej9_veterinaria.sql](SQL/sql_ej9_veterinaria.sql) | Especialización, entidad débil, atributo multivaluado |
+### Objetivo general
 
----
+Documentar y organizar las actividades académicas desarrolladas durante la asignatura, evidenciando la aplicación de los fundamentos teóricos y prácticos del diseño, modelado y gestión de bases de datos.
 
-## Estructura del repositorio
+### Objetivos específicos
 
-```
-repositorio_base_datos/
-├── drawio/    Diagramas Entidad-Relación (.drawio)
-│   ├── ej1_biblioteca.drawio
-│   ├── ...
-│   └── ej9_veterinaria.drawio
-├── SQL/       Scripts de creación de tablas (.sql)
-│   ├── EJER1.sql
-│   ├── sql_ej1_biblioteca.sql
-│   ├── ...
-│   └── sql_ej9_veterinaria.sql
-└── README.md
-```
+- Desarrollar diagramas Entidad-Relación a partir de diferentes escenarios y requerimientos.
+- Representar estructuras de datos mediante modelos relacionales.
+- Identificar entidades, atributos, relaciones, cardinalidades y restricciones.
+- Implementar estructuras de bases de datos mediante sentencias SQL.
+- Organizar y documentar los archivos correspondientes a cada actividad y proyecto.
 
----
+## 3. Estructura del repositorio
 
-## Notación utilizada
+El repositorio se encuentra organizado en dos secciones principales:
 
-### Diagramas Entidad-Relación (notación de Chen)
+### 3.1. Actividades autónomas
 
-- **Rectángulo:** entidad. El **doble rectángulo** indica una entidad débil.
-- **Rombo:** relación. El **doble rombo** indica una relación identificadora.
-- **Óvalo:** atributo. El **texto subrayado** indica la clave. El **doble óvalo** indica un atributo multivaluado.
-- **Triángulo ISA:** especialización (generalización).
-- **Cardinalidades:** el valor junto a una entidad indica cuántas instancias de esa entidad se asocian con una instancia de la otra (`1`, `N`, `M`, `0,1`, `1,N`, `0,N`).
+La carpeta `Autonomos/` contiene los ejercicios independientes desarrollados durante la asignatura.
 
-### Scripts SQL
+**Diagramas/**
 
-- Las claves primarias de una sola columna se declaran en la misma línea, por ejemplo `id_socio VARCHAR(15) PRIMARY KEY`.
-- Las claves primarias compuestas se declaran al final de la tabla con `PRIMARY KEY (columna1, columna2)`.
-- Las relaciones entre tablas se definen con `FOREIGN KEY (columna) REFERENCES tabla(clave)`.
-- Los atributos son `NOT NULL`, salvo cuando el enunciado permite que no tengan valor.
-- Las relaciones **N:M** se resuelven con una **tabla intermedia** que lleva las claves de ambas entidades y los atributos propios de la relación.
+Contiene los diagramas elaborados para cada ejercicio, organizados en tres categorías:
 
----
+- `Entidad_Relacion/`: representaciones conceptuales de las bases de datos mediante diagramas Entidad-Relación en formato SVG.
+- `Modelo_Relacional/`: representaciones de las estructuras relacionales obtenidas a partir de los diagramas conceptuales.
+- `Drawio/`: archivos editables de los diagramas desarrollados mediante Draw.io.
 
-## Cómo usar los archivos
+**SQL/**
 
-### Abrir los diagramas
+Contiene los scripts SQL correspondientes a cada ejercicio, utilizados para representar e implementar las estructuras de las bases de datos.
 
-1. Entra a [app.diagrams.net](https://app.diagrams.net/) (draw.io) o abre la aplicación de escritorio.
-2. Selecciona **Abrir archivo existente** y elige un archivo `.drawio` de la carpeta `drawio/`.
+Los escenarios desarrollados son:
 
-### Ejecutar los scripts
+| N.º | Escenario |
+|---|---|
+| 01 | Biblioteca |
+| 02 | Restaurante |
+| 03 | Clínica médica |
+| 04 | Aerolínea |
+| 05 | Discográfica |
+| 06 | Tienda informática |
+| 07 | Discos musicales |
+| 08 | Camiones |
+| 09 | Veterinaria |
 
-1. Crea una base de datos para el ejercicio en tu gestor relacional.
-2. Ejecuta el archivo `.sql` correspondiente de la carpeta `SQL/`.
+### 3.2. Proyecto
 
-> **Nota:** algunos nombres de tabla se repiten entre ejercicios (por ejemplo, `cliente`). Conviene ejecutar cada script en una base de datos distinta.
+La carpeta `Proyecto/` contiene los recursos y archivos desarrollados para el proyecto práctico de la asignatura, enfocado en una tienda de aplicaciones.
+
+Su organización comprende:
+
+- `Drawio/`: diagramas editables relacionados con el proyecto.
+- `Modelos/`: diagramas Entidad-Relación y modelos relacionales.
+- `SQL/`: scripts SQL para la definición y gestión de la base de datos.
+- `Tablas/`: archivos CSV que contienen los registros correspondientes a las diferentes tablas del sistema.
+
+### 3.3. Evaluación
+
+El archivo `Evaluacion_U1.pdf` contiene el documento correspondiente a la evaluación de la primera unidad.
+
+## 4. Tecnologías y herramientas
+
+Para el desarrollo de las actividades se emplearon las siguientes herramientas y tecnologías:
+
+| Herramienta | Aplicación |
+|---|---|
+| SQL | Definición y manipulación de bases de datos. |
+| Draw.io | Elaboración y edición de diagramas. |
+| SVG | Representación gráfica de los modelos. |
+| CSV | Almacenamiento e intercambio de datos tabulares. |
+| Git | Control de versiones. |
+| GitHub | Gestión y alojamiento del repositorio. |
+
+## 5. Competencias desarrolladas
+
+El desarrollo de las actividades permite fortalecer las siguientes competencias:
+
+- Análisis de requerimientos para el diseño de bases de datos.
+- Identificación y representación de entidades y relaciones.
+- Diseño de modelos conceptuales y relacionales.
+- Identificación de claves primarias y foráneas.
+- Comprensión de las restricciones de integridad.
+- Elaboración de estructuras de bases de datos mediante SQL.
+- Organización y documentación de proyectos relacionados con la gestión de datos.
+
+## 6. Autor
+
+**Diyer Torres**  
+Carrera: Ingeniería en Computación  
+Institución: Universidad Nacional de Loja  
+Asignatura: Base de Datos
